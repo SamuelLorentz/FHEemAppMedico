@@ -79,30 +79,7 @@ namespace csharp_db_test
                 System.Numerics.BigInteger.TryParse(p[i].S, out B);
                 y[i] = B;
             }
-
-            Console.WriteLine("120 - " + z[0]);
-            Console.WriteLine(" 130 - " + z[1]);
-            Console.WriteLine(" 132 - " + z[2]);
-            Console.WriteLine(" 139 - " + z[3]);
-            Console.WriteLine(" 141 - " + z[4]);
-            Console.WriteLine(" 128 - " + z[5]);
-            Console.WriteLine(" 131 - " + z[6]);
-            Console.WriteLine(" 128 - " + z[7]);
-            Console.WriteLine(" 140 - " + z[8]);
-            Console.WriteLine(" 133 - " + z[9]);
-
-            Console.WriteLine(" 97 - " + y[0]);
-            Console.WriteLine(" 92 - " + y[1]);
-            Console.WriteLine(" 91 - " + y[2]);
-            Console.WriteLine(" 99 - " + y[3]);
-            Console.WriteLine(" 92 - " + y[9]);
-            Console.WriteLine(" 88 - " + y[4]);
-            Console.WriteLine(" 89 - " + y[5]);
-            Console.WriteLine(" 95 - " + y[6]);
-            Console.WriteLine(" 96 - " + y[7]);
-            Console.WriteLine(" 93 - " + y[8]);
-
-
+            
             System.Numerics.BigInteger g = z[0];
             System.Numerics.BigInteger h = y[0];
 
@@ -111,13 +88,6 @@ namespace csharp_db_test
                 g = g + z[i];
                 h = h + y[i];
             }
-
-                        
-
-
-            Console.WriteLine("1322 - " + g.ToString());
-            Console.WriteLine(" 932  - " + h.ToString());
-
 
             foo = int.Parse(decrypt(g.ToString()));
             fighters = int.Parse(decrypt(h.ToString()));
@@ -132,10 +102,10 @@ namespace csharp_db_test
             try
             {
                 var cb = new SqlConnectionStringBuilder();
-                cb.DataSource = "galocura22.database.windows.net";
-                cb.UserID = "samuel.barceloss";
-                cb.Password = "AxlRose123";
-                cb.InitialCatalog = "IHospital";
+                cb.DataSource = "";
+                cb.UserID = "";
+                cb.Password = "";
+                cb.InitialCatalog = "";
 
                 string Dia, Sis;
                 Pressoes = new P[10];
